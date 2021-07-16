@@ -1,16 +1,18 @@
 import java.awt.Color;
+import java.awt.Font;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 
+
+
 public class Calc {
-	
+
 	Calc(){
-		
-		JFrame jf=new JFrame("Calculator");
-		jf.setSize(450,450);
+		JFrame jf=new JFrame("Java Calculator");
+		jf.setSize(450,510);
 		jf.setLocation(350, 80);
 		jf.setLayout(null);
 		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -18,9 +20,9 @@ public class Calc {
 		
 		JLabel Displaylabel=new JLabel("Sample Display");
 		Displaylabel.setHorizontalAlignment(SwingConstants.RIGHT);
-		Displaylabel.setBounds(20,20,440,50);
-		Displaylabel.setBackground(Color.white);
-		Displaylabel.setForeground(Color.black);
+		Displaylabel.setBounds(20,20,400,70);
+		Displaylabel.setBackground(Color.gray);
+		Displaylabel.setForeground(Color.white);
 		Displaylabel.setOpaque(true);
 		jf.add(Displaylabel);
 		
@@ -28,96 +30,134 @@ public class Calc {
 		Mcbutton.setBounds(20,120,60,60);
 		jf.add(Mcbutton);
 		
+		
+		JButton Percentagebutton = new JButton("%");
+		Percentagebutton.setBounds(20,190,60,60);
+		jf.add(Percentagebutton);
+		Percentagebutton.setFont(new Font("Arial", Font.PLAIN, 20));
+		
+		JButton Mrbutton = new JButton("MR");
+		Mrbutton.setBounds(100,120,60,60);
+		jf.add(Mrbutton);
+		
 		JButton Sevenbutton = new JButton("7");
-		Sevenbutton.setBounds(100,120,60,60);
+		Sevenbutton.setBounds(100,190,60,60);
 		jf.add(Sevenbutton);
+		Sevenbutton.setFont(new Font("Arial", Font.PLAIN, 30));
+		
+		JButton Mminusbutton = new JButton("M-");
+		Mminusbutton.setBounds(180,120,60,60);
+		jf.add(Mminusbutton);
 		
 		JButton Eightbutton = new JButton("8");
-		Eightbutton.setBounds(180,120,60,60);
+		Eightbutton.setBounds(180,190,60,60);
 		jf.add(Eightbutton);
+		Eightbutton.setFont(new Font("Arial", Font.PLAIN, 30));
+		
+		JButton Mplusbutton = new JButton("M+");
+		Mplusbutton.setBounds(260,120,60,60);
+		jf.add(Mplusbutton);
 		
 		JButton Ninebutton = new JButton("9");
-		Ninebutton.setBounds(260,120,60,60);
+		Ninebutton.setBounds(260,190,60,60);
 		jf.add(Ninebutton);
+		Ninebutton.setFont(new Font("Arial", Font.PLAIN, 30));
+		
+		JButton Rootbutton = new JButton("Root");
+		Rootbutton.setBounds(340,120,60,60);
+		jf.add(Rootbutton);
+		Rootbutton.setFont(new Font("Arial", Font.PLAIN, 30));
+		
 		
 		JButton Divisionbutton = new JButton("/");
-		Divisionbutton.setBounds(340,120,60,60);
+		Divisionbutton.setBounds(340,190,60,60);
 		jf.add(Divisionbutton);
+		Divisionbutton.setFont(new Font("Arial", Font.PLAIN, 30));
+		
 		
 		JButton Plusorminusbutton = new JButton("+/-");
-		Plusorminusbutton.setBounds(20,190,60,60);
+		Plusorminusbutton.setBounds(20,260,60,60);
 		jf.add(Plusorminusbutton);
+		Plusorminusbutton.setFont(new Font("Arial", Font.PLAIN,20));
 		
 		JButton Fourbutton = new JButton("4");
-		Fourbutton.setBounds(100,190,60,60);
+		Fourbutton.setBounds(100,260,60,60);
 		jf.add(Fourbutton);
+		Fourbutton.setFont(new Font("Arial", Font.PLAIN, 30));
 		
 		JButton Fivebutton = new JButton("5");
-		Fivebutton.setBounds(180,190,60,60);
+		Fivebutton.setBounds(180,260,60,60);
 		jf.add(Fivebutton);
+		Fivebutton.setFont(new Font("Arial", Font.PLAIN, 30));
 		
 		
 		
 		JButton Sixbutton = new JButton("6");
-		Sixbutton.setBounds(260,190,60,60);
+		Sixbutton.setBounds(260,260,60,60);
 		jf.add(Sixbutton);
+		Sixbutton.setFont(new Font("Arial", Font.PLAIN, 30));
 		
 		JButton Multibutton = new JButton("X");
-		Multibutton.setBounds(340,190,60,60);
+		Multibutton.setBounds(340,260,60,60);
 		jf.add(Multibutton);
+		Multibutton.setFont(new Font("Arial", Font.PLAIN, 30));
 		
 		
 		JButton Cebutton = new JButton("CE");
-		Cebutton.setBounds(20,260,60,60);
+		Cebutton.setBounds(20,330,60,60);
 		jf.add(Cebutton);
 		
 		
 		JButton Onebutton = new JButton("1");
-		Onebutton.setBounds(100,260,60,60);
+		Onebutton.setBounds(100,330,60,60);
 		jf.add(Onebutton);
+		Onebutton.setFont(new Font("Arial", Font.PLAIN, 30));
+		
 		
 		JButton Twobutton = new JButton("2");
-		Twobutton.setBounds(180,260,60,60);
+		Twobutton.setBounds(180,330,60,60);
 		jf.add(Twobutton);
+		Twobutton.setFont(new Font("Arial", Font.PLAIN, 30));
 		
 		JButton Threebutton = new JButton("3");
-		Threebutton.setBounds(260,260,60,60);
+		Threebutton.setBounds(260,330,60,60);
 		jf.add(Threebutton);
+		Threebutton.setFont(new Font("Arial", Font.PLAIN, 30));
+		
 		
 		JButton Subtractbutton = new JButton("-");
-		Subtractbutton.setBounds(340,260,60,60);
+		Subtractbutton.setBounds(340,330,60,60);
 		jf.add(Subtractbutton);
+		Subtractbutton.setFont(new Font("Arial", Font.PLAIN, 30));
 		
 		JButton Acbutton = new JButton("AC");
-		Acbutton.setBounds(20,330,60,60);
+		Acbutton.setBounds(20,400,60,60);
 		jf.add(Acbutton);
 		
 		JButton Zerobutton = new JButton("0");
-		Zerobutton.setBounds(100,330,60,60);
+		Zerobutton.setBounds(100,400,60,60);
 		jf.add(Zerobutton);
+		Zerobutton.setFont(new Font("Arial", Font.PLAIN, 30));
 		
 		JButton Pointbutton = new JButton(".");
-		Pointbutton.setBounds(180,330,60,60);
+		Pointbutton.setBounds(180,400,60,60);
 		jf.add(Pointbutton);
+		Pointbutton.setFont(new Font("Arial", Font.PLAIN, 30));
+		
 		
 		JButton Equalbutton = new JButton("=");
-		Equalbutton.setBounds(260,330,60,60);
+		Equalbutton.setBounds(260,400,60,60);
 		jf.add(Equalbutton);
+		Equalbutton.setFont(new Font("Arial", Font.PLAIN, 30));
+		
 		
 		JButton Plusbutton = new JButton("+");
-		Plusbutton.setBounds(340,330,60,60);
+		Plusbutton.setBounds(340,400,60,60);
 		jf.add(Plusbutton);
+		Plusbutton.setFont(new Font("Arial", Font.PLAIN, 30));
 		
-		
-		
-				
 	}
-	
 	public static void main(String[] args) {
-		
-		/*Calc C=new Calc();*/
-		
 		new Calc();
 	}
-
 }
