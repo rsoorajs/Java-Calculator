@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.awt.Font;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -29,9 +30,11 @@ public class Calc {
 		Mcbutton.setBounds(20,120,60,60);
 		jf.add(Mcbutton);
 		
+		
 		JButton Percentagebutton = new JButton("%");
 		Percentagebutton.setBounds(20,190,60,60);
 		jf.add(Percentagebutton);
+		Percentagebutton.setFont(new Font("Arial", Font.PLAIN, 20));
 		
 		JButton Mrbutton = new JButton("MR");
 		Mrbutton.setBounds(100,120,60,60);
@@ -40,6 +43,7 @@ public class Calc {
 		JButton Sevenbutton = new JButton("7");
 		Sevenbutton.setBounds(100,190,60,60);
 		jf.add(Sevenbutton);
+		Sevenbutton.setFont(new Font("Arial", Font.PLAIN, 30));
 		
 		JButton Mminusbutton = new JButton("M-");
 		Mminusbutton.setBounds(180,120,60,60);
@@ -48,6 +52,7 @@ public class Calc {
 		JButton Eightbutton = new JButton("8");
 		Eightbutton.setBounds(180,190,60,60);
 		jf.add(Eightbutton);
+		Eightbutton.setFont(new Font("Arial", Font.PLAIN, 30));
 		
 		JButton Mplusbutton = new JButton("M+");
 		Mplusbutton.setBounds(260,120,60,60);
@@ -56,36 +61,46 @@ public class Calc {
 		JButton Ninebutton = new JButton("9");
 		Ninebutton.setBounds(260,190,60,60);
 		jf.add(Ninebutton);
+		Ninebutton.setFont(new Font("Arial", Font.PLAIN, 30));
 		
 		JButton Rootbutton = new JButton("Root");
 		Rootbutton.setBounds(340,120,60,60);
 		jf.add(Rootbutton);
+		Rootbutton.setFont(new Font("Arial", Font.PLAIN, 30));
+		
 		
 		JButton Divisionbutton = new JButton("/");
 		Divisionbutton.setBounds(340,190,60,60);
 		jf.add(Divisionbutton);
+		Divisionbutton.setFont(new Font("Arial", Font.PLAIN, 30));
+		
 		
 		JButton Plusorminusbutton = new JButton("+/-");
 		Plusorminusbutton.setBounds(20,260,60,60);
 		jf.add(Plusorminusbutton);
+		Plusorminusbutton.setFont(new Font("Arial", Font.PLAIN,20));
 		
 		JButton Fourbutton = new JButton("4");
 		Fourbutton.setBounds(100,260,60,60);
 		jf.add(Fourbutton);
+		Fourbutton.setFont(new Font("Arial", Font.PLAIN, 30));
 		
 		JButton Fivebutton = new JButton("5");
 		Fivebutton.setBounds(180,260,60,60);
 		jf.add(Fivebutton);
+		Fivebutton.setFont(new Font("Arial", Font.PLAIN, 30));
 		
 		
 		
 		JButton Sixbutton = new JButton("6");
 		Sixbutton.setBounds(260,260,60,60);
 		jf.add(Sixbutton);
+		Sixbutton.setFont(new Font("Arial", Font.PLAIN, 30));
 		
 		JButton Multibutton = new JButton("X");
 		Multibutton.setBounds(340,260,60,60);
 		jf.add(Multibutton);
+		Multibutton.setFont(new Font("Arial", Font.PLAIN, 30));
 		
 		
 		JButton Cebutton = new JButton("CE");
@@ -96,18 +111,24 @@ public class Calc {
 		JButton Onebutton = new JButton("1");
 		Onebutton.setBounds(100,330,60,60);
 		jf.add(Onebutton);
+		Onebutton.setFont(new Font("Arial", Font.PLAIN, 30));
+		
 		
 		JButton Twobutton = new JButton("2");
 		Twobutton.setBounds(180,330,60,60);
 		jf.add(Twobutton);
+		Twobutton.setFont(new Font("Arial", Font.PLAIN, 30));
 		
 		JButton Threebutton = new JButton("3");
 		Threebutton.setBounds(260,330,60,60);
 		jf.add(Threebutton);
+		Threebutton.setFont(new Font("Arial", Font.PLAIN, 30));
+		
 		
 		JButton Subtractbutton = new JButton("-");
 		Subtractbutton.setBounds(340,330,60,60);
 		jf.add(Subtractbutton);
+		Subtractbutton.setFont(new Font("Arial", Font.PLAIN, 30));
 		
 		JButton Acbutton = new JButton("AC");
 		Acbutton.setBounds(20,400,60,60);
@@ -116,18 +137,24 @@ public class Calc {
 		JButton Zerobutton = new JButton("0");
 		Zerobutton.setBounds(100,400,60,60);
 		jf.add(Zerobutton);
+		Zerobutton.setFont(new Font("Arial", Font.PLAIN, 30));
 		
 		JButton Pointbutton = new JButton(".");
 		Pointbutton.setBounds(180,400,60,60);
 		jf.add(Pointbutton);
+		Pointbutton.setFont(new Font("Arial", Font.PLAIN, 30));
+		
 		
 		JButton Equalbutton = new JButton("=");
 		Equalbutton.setBounds(260,400,60,60);
 		jf.add(Equalbutton);
+		Equalbutton.setFont(new Font("Arial", Font.PLAIN, 30));
+		
 		
 		JButton Plusbutton = new JButton("+");
 		Plusbutton.setBounds(340,400,60,60);
 		jf.add(Plusbutton);
+		Plusbutton.setFont(new Font("Arial", Font.PLAIN, 30));
 		
 	}
 	public static void main(String[] args) {
