@@ -47,13 +47,15 @@ public class Calc implements ActionListener {
 		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		jf.setVisible(true);
 		
-		Displaylabel=new JLabel("WELCOME TO JAVA CALCULATOR");
+		
+		Displaylabel=new JLabel();
 		Displaylabel.setHorizontalAlignment(SwingConstants.RIGHT);
 		Displaylabel.setBounds(20,20,400,70);
 		Displaylabel.setBackground(Color.gray);
 		Displaylabel.setForeground(Color.white);
 		Displaylabel.setOpaque(true);
 		jf.add(Displaylabel);
+		Displaylabel.setFont(new Font("Serif", Font.BOLD, 50));
 		
 		JButton Mcbutton = new JButton("MC");
 		Mcbutton.setBounds(20,120,60,60);
@@ -244,19 +246,19 @@ public class Calc implements ActionListener {
 			Displaylabel.setText("MR");}
 		
 		else if(e.getSource() == Sevenbutton) {
-			Displaylabel.setText("7");}
+			Displaylabel.setText(Displaylabel.getText()+"7");}
 		
 		else if(e.getSource() == Mminusbutton) {
 			Displaylabel.setText("M-");}
 		
 		else if(e.getSource() == Eightbutton) {
-			Displaylabel.setText("8");}
+			Displaylabel.setText(Displaylabel.getText()+"8");}
 		
 		else if(e.getSource() == Mplusbutton) {
 			Displaylabel.setText("M+");}
 		
 		else if(e.getSource() == Ninebutton) {
-			Displaylabel.setText("9");}
+			Displaylabel.setText(Displaylabel.getText()+"9");}
 		
 		else if(e.getSource() == Rootbutton) {
 			Displaylabel.setText("Root");}
@@ -268,13 +270,13 @@ public class Calc implements ActionListener {
 			Displaylabel.setText("+/-");}
 		
 		else if(e.getSource() == Fourbutton) {
-			Displaylabel.setText("4");}
+			Displaylabel.setText(Displaylabel.getText ()+"4");}
 		
 		else if(e.getSource() == Fivebutton) {
-			Displaylabel.setText("5");}
+			Displaylabel.setText(Displaylabel.getText()+"5");}
 		
 		else if(e.getSource() == Sixbutton) {
-			Displaylabel.setText("6");}
+			Displaylabel.setText(Displaylabel.getText()+"6");}
 		
 		else if(e.getSource() == Multibutton) {
 			Displaylabel.setText("X");}
@@ -283,13 +285,13 @@ public class Calc implements ActionListener {
 			Displaylabel.setText("CE");}
 		
 		else if(e.getSource() == Onebutton) {
-			Displaylabel.setText("1");}
+			Displaylabel.setText(Displaylabel.getText()+"1");}
 		
 		else if(e.getSource() == Twobutton) {
-			Displaylabel.setText("2");}
+			Displaylabel.setText(Displaylabel.getText()+"2");}
 		
 		else if(e.getSource() == Threebutton) {
-			Displaylabel.setText("3");}
+			Displaylabel.setText(Displaylabel.getText()+"3");}
 		
 		else if(e.getSource() == Subtractbutton) {
 			Displaylabel.setText("-");}
@@ -298,7 +300,7 @@ public class Calc implements ActionListener {
 			Displaylabel.setText("AC");}
 		
 		else if(e.getSource() == Zerobutton) {
-			Displaylabel.setText("0");}
+			Displaylabel.setText(Displaylabel.getText()+"0");}
 		
 		else if(e.getSource() == Pointbutton) {
 			Displaylabel.setText(".");}
