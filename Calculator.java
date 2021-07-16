@@ -237,25 +237,25 @@ public class Calc implements ActionListener {
 	
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()== Mcbutton) {
-			Displaylabel.setText("MC");}
+			}
 		
 		else if(e.getSource() == Percentagebutton) {
-				Displaylabel.setText("%");}
+				}
 
 		else if(e.getSource() == Mrbutton) {
-			Displaylabel.setText("MR");}
+			}
 		
 		else if(e.getSource() == Sevenbutton) {
 			Displaylabel.setText(Displaylabel.getText()+"7");}
 		
 		else if(e.getSource() == Mminusbutton) {
-			Displaylabel.setText("M-");}
+			}
 		
 		else if(e.getSource() == Eightbutton) {
 			Displaylabel.setText(Displaylabel.getText()+"8");}
 		
 		else if(e.getSource() == Mplusbutton) {
-			Displaylabel.setText("M+");}
+			}
 		
 		else if(e.getSource() == Ninebutton) {
 			Displaylabel.setText(Displaylabel.getText()+"9");}
@@ -264,10 +264,10 @@ public class Calc implements ActionListener {
 			Displaylabel.setText("Root");}
 		
 		else if(e.getSource() == Divisionbutton) {
-			Displaylabel.setText("/");}
+			}
 		
 		else if(e.getSource() == Plusorminusbutton) {
-			Displaylabel.setText("+/-");}
+			}
 		
 		else if(e.getSource() == Fourbutton) {
 			Displaylabel.setText(Displaylabel.getText ()+"4");}
@@ -279,10 +279,10 @@ public class Calc implements ActionListener {
 			Displaylabel.setText(Displaylabel.getText()+"6");}
 		
 		else if(e.getSource() == Multibutton) {
-			Displaylabel.setText("X");}
+			}
 		
 		else if(e.getSource() == Cebutton) {
-			Displaylabel.setText("CE");}
+			Displaylabel.setText("0");}
 		
 		else if(e.getSource() == Onebutton) {
 			Displaylabel.setText(Displaylabel.getText()+"1");}
@@ -294,22 +294,22 @@ public class Calc implements ActionListener {
 			Displaylabel.setText(Displaylabel.getText()+"3");}
 		
 		else if(e.getSource() == Subtractbutton) {
-			Displaylabel.setText("-");}
+			}
 		
-		else if(e.getSource() == Acbutton) {
-			Displaylabel.setText("AC");}
+		else if(e.getSource() == Acbutton) { 
+			Displaylabel.setText("");}
 		
 		else if(e.getSource() == Zerobutton) {
 			Displaylabel.setText(Displaylabel.getText()+"0");}
 		
 		else if(e.getSource() == Pointbutton) {
-			Displaylabel.setText(".");}
+			Displaylabel.setText(Displaylabel.getText()+".");}
 		
 		else if(e.getSource() == Equalbutton) {
-			Displaylabel.setText("=");}
+			}
 		
 		else if(e.getSource() == Plusbutton) {
-			Displaylabel.setText("+");}
+			}
 		
 		
 		
