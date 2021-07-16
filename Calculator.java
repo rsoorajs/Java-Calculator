@@ -5,10 +5,11 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 
+
+
 public class Calc {
-	
+
 	Calc(){
-		
 		JFrame jf=new JFrame("Java Calculator");
 		jf.setSize(450,510);
 		jf.setLocation(350, 80);
@@ -56,7 +57,7 @@ public class Calc {
 		Ninebutton.setBounds(260,190,60,60);
 		jf.add(Ninebutton);
 		
-		JButton Rootbutton = new JButton("√");
+		JButton Rootbutton = new JButton("Root");
 		Rootbutton.setBounds(340,120,60,60);
 		jf.add(Rootbutton);
 		
@@ -128,16 +129,8 @@ public class Calc {
 		Plusbutton.setBounds(340,400,60,60);
 		jf.add(Plusbutton);
 		
-		
-		
-				
 	}
-	
 	public static void main(String[] args) {
-		
-		/*Calc C=new Calc();*/
-		
 		new Calc();
 	}
-
 }
