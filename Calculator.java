@@ -44,6 +44,10 @@ public class Calc implements ActionListener {
 	
 	String oldnum;
 	String newnum;
+	Float oldnum2;
+	Float newnum2;
+	Float result;
+	
 	int select=0;
 
 	Calc(){
@@ -247,7 +251,9 @@ public class Calc implements ActionListener {
 			}
 		
 		else if(e.getSource() == Percentagebutton) {
+			select=5;
 			check = true;
+			oldnum=Displaylabel.getText();
 				}
 
 		else if(e.getSource() == Mrbutton) {
@@ -295,10 +301,15 @@ public class Calc implements ActionListener {
 		
 		else if(e.getSource() == Rootbutton) {
 			
-			check = true;}
+			select=6;
+			check = true;
+			oldnum=Displaylabel.getText();
+			}
 		
 		else if(e.getSource() == Divisionbutton) {
+			select=4;
 			check = true;
+			oldnum=Displaylabel.getText();
 			}
 		
 		else if(e.getSource() == Plusorminusbutton) {
@@ -339,7 +350,9 @@ public class Calc implements ActionListener {
 		}
 		
 		else if(e.getSource() == Multibutton) {
+			select=3;
 			check = true;
+			oldnum=Displaylabel.getText();
 			}
 		
 		else if(e.getSource() == Cebutton) {
@@ -379,7 +392,9 @@ public class Calc implements ActionListener {
 		}
 		
 		else if(e.getSource() == Subtractbutton) {
+			select=2;
 			check = true;
+			oldnum=Displaylabel.getText();
 			}
 		
 		else if(e.getSource() == Acbutton) { 
@@ -408,21 +423,42 @@ public class Calc implements ActionListener {
 		}
 		
 		else if(e.getSource() == Equalbutton) {
-			if(select==1) {
-			String newnum=Displaylabel.getText();
-			Float oldnum2=Float.parseFloat(oldnum);
-			Float newnum2=Float.parseFloat(newnum);
+			switch(select) {
+			
+			case 1:		
+				newnum=Displaylabel.getText();
+				oldnum2=Float.parseFloat(oldnum);
+				newnum2=Float.parseFloat(newnum);
+				result=oldnum2+newnum2;
+				Displaylabel.setText(result +"");
+				break;
+			case 2:
+				newnum=Displaylabel.getText();
+				oldnum2=Float.parseFloat(oldnum);
+				newnum2=Float.parseFloat(newnum);
+				result=oldnum2-newnum2;
+				Displaylabel.setText(result +"");
+				break;
+			case 3:
+				newnum=Displaylabel.getText();
+				oldnum2=Float.parseFloat(oldnum);
+				newnum2=Float.parseFloat(newnum);
+				result=oldnum2*newnum2;
+				Displaylabel.setText(result +"");
+				break;
+			case 4:
+				newnum=Displaylabel.getText();
+				oldnum2=Float.parseFloat(oldnum);
+				newnum2=Float.parseFloat(newnum);
+				result=oldnum2/newnum2;
+				Displaylabel.setText(result +"");
+				break;
+				
+				
+			default:
+				Displaylabel.setText("You monkey");
 			
 			
-			
-			Float sum=oldnum2+newnum2;
-			
-			
-			Displaylabel.setText(sum +"");
-			
-			}
-			else {
-				Displaylabel.setText("Bad luck");
 			}
 			}
 		
