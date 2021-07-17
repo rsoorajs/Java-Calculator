@@ -41,6 +41,10 @@ public class Calc implements ActionListener {
 	
 	
 	boolean check=false;
+	
+	String oldnum;
+	String newnum;
+	int select=0;
 
 	Calc(){
 		jf=new JFrame("Java Calculator");
@@ -294,6 +298,7 @@ public class Calc implements ActionListener {
 			check = true;}
 		
 		else if(e.getSource() == Divisionbutton) {
+			check = true;
 			}
 		
 		else if(e.getSource() == Plusorminusbutton) {
@@ -403,14 +408,32 @@ public class Calc implements ActionListener {
 		}
 		
 		else if(e.getSource() == Equalbutton) {
-			check = true;
+			if(select==1) {
+			String newnum=Displaylabel.getText();
+			Float oldnum2=Float.parseFloat(oldnum);
+			Float newnum2=Float.parseFloat(newnum);
+			
+			
+			
+			Float sum=oldnum2+newnum2;
+			
+			
+			Displaylabel.setText(sum +"");
+			
+			}
+			else {
+				Displaylabel.setText("Bad luck");
+			}
 			}
 		
 		else if(e.getSource() == Plusbutton) {
+			select=1;
 			check = true;
+			oldnum=Displaylabel.getText();
+			
+			
 			}
-		
-		
+			
 		
 	}
 }
