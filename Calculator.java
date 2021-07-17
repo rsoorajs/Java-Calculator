@@ -38,6 +38,9 @@ public class Calc implements ActionListener {
 	JButton Pointbutton;
 	JButton Equalbutton;
 	JButton Plusbutton;
+	
+	
+	boolean check=false;
 
 	Calc(){
 		jf=new JFrame("Java Calculator");
@@ -240,75 +243,171 @@ public class Calc implements ActionListener {
 			}
 		
 		else if(e.getSource() == Percentagebutton) {
+			check = true;
 				}
 
 		else if(e.getSource() == Mrbutton) {
 			}
 		
 		else if(e.getSource() == Sevenbutton) {
-			Displaylabel.setText(Displaylabel.getText()+"7");}
+			if(check==true) {
+				Displaylabel.setText("7");
+				check=false;
+			}
+			else {
+				
+			Displaylabel.setText(Displaylabel.getText()+"7");
+			}
+		}
 		
 		else if(e.getSource() == Mminusbutton) {
+			check = true;
 			}
 		
 		else if(e.getSource() == Eightbutton) {
-			Displaylabel.setText(Displaylabel.getText()+"8");}
+			if(check==true) {
+				Displaylabel.setText("8");
+				check=false;
+			}
+			else {
+				
+			Displaylabel.setText(Displaylabel.getText()+"8");
+			}
+		}
 		
 		else if(e.getSource() == Mplusbutton) {
 			}
 		
 		else if(e.getSource() == Ninebutton) {
-			Displaylabel.setText(Displaylabel.getText()+"9");}
+			if(check==true) {
+				Displaylabel.setText("9");
+				check=false;
+			}
+			else {
+				
+			Displaylabel.setText(Displaylabel.getText()+"9");
+			}
+		}
 		
 		else if(e.getSource() == Rootbutton) {
-			Displaylabel.setText("Root");}
+			
+			check = true;}
 		
 		else if(e.getSource() == Divisionbutton) {
 			}
 		
 		else if(e.getSource() == Plusorminusbutton) {
+			check = true;
 			}
 		
 		else if(e.getSource() == Fourbutton) {
-			Displaylabel.setText(Displaylabel.getText ()+"4");}
+			if(check==true) {
+				Displaylabel.setText("4");
+				check=false;
+			}
+			else {
+				
+			Displaylabel.setText(Displaylabel.getText()+"4");
+			}
+		}
 		
 		else if(e.getSource() == Fivebutton) {
-			Displaylabel.setText(Displaylabel.getText()+"5");}
+			if(check==true) {
+				Displaylabel.setText("5");
+				check=false;
+			}
+			else {
+				
+			Displaylabel.setText(Displaylabel.getText()+"5");
+			}
+		}
 		
 		else if(e.getSource() == Sixbutton) {
-			Displaylabel.setText(Displaylabel.getText()+"6");}
+			if(check==true) {
+				Displaylabel.setText("6");
+				check=false;
+			}
+			else {
+				
+			Displaylabel.setText(Displaylabel.getText()+"6");
+			}
+		}
 		
 		else if(e.getSource() == Multibutton) {
+			check = true;
 			}
 		
 		else if(e.getSource() == Cebutton) {
 			Displaylabel.setText("0");}
 		
 		else if(e.getSource() == Onebutton) {
-			Displaylabel.setText(Displaylabel.getText()+"1");}
+			if(check==true) {
+				Displaylabel.setText("1");
+				check=false;
+			}
+			else {
+				
+			Displaylabel.setText(Displaylabel.getText()+"1");
+			}
+		}
 		
 		else if(e.getSource() == Twobutton) {
-			Displaylabel.setText(Displaylabel.getText()+"2");}
+			if(check==true) {
+				Displaylabel.setText("2");
+				check=false;
+			}
+			else {
+				
+			Displaylabel.setText(Displaylabel.getText()+"2");
+			}
+		}
 		
 		else if(e.getSource() == Threebutton) {
-			Displaylabel.setText(Displaylabel.getText()+"3");}
+			if(check==true) {
+				Displaylabel.setText("3");
+				check=false;
+			}
+			else {
+				
+			Displaylabel.setText(Displaylabel.getText()+"3");
+			}
+		}
 		
 		else if(e.getSource() == Subtractbutton) {
+			check = true;
 			}
 		
 		else if(e.getSource() == Acbutton) { 
 			Displaylabel.setText("");}
 		
 		else if(e.getSource() == Zerobutton) {
-			Displaylabel.setText(Displaylabel.getText()+"0");}
+			if(check==true) {
+				Displaylabel.setText("0");
+				check=false;
+			}
+			else {
+				
+			Displaylabel.setText(Displaylabel.getText()+"0");
+			}
+		}
 		
 		else if(e.getSource() == Pointbutton) {
-			Displaylabel.setText(Displaylabel.getText()+".");}
+			if(check==true) {
+				Displaylabel.setText(".");
+				check=false;
+			}
+			else {
+				
+			Displaylabel.setText(Displaylabel.getText()+".");
+			}
+		}
 		
 		else if(e.getSource() == Equalbutton) {
+			check = true;
 			}
 		
 		else if(e.getSource() == Plusbutton) {
+			check = true;
 			}
 		
 		
