@@ -47,6 +47,10 @@ public class Calc implements ActionListener {
 	Float oldnum2;
 	Float newnum2;
 	Float result;
+	float temp;
+	float temp2;
+
+
 	
 	int select=0;
 
@@ -306,11 +310,7 @@ public class Calc implements ActionListener {
 			oldnum=Displaylabel.getText();
 			}
 		
-		else if(e.getSource() == Divisionbutton) {
-			select=4;
-			check = true;
-			oldnum=Displaylabel.getText();
-			}
+		
 		
 		else if(e.getSource() == Plusorminusbutton) {
 			check = true;
@@ -349,11 +349,7 @@ public class Calc implements ActionListener {
 			}
 		}
 		
-		else if(e.getSource() == Multibutton) {
-			select=3;
-			check = true;
-			oldnum=Displaylabel.getText();
-			}
+		
 		
 		else if(e.getSource() == Cebutton) {
 			Displaylabel.setText("0");}
@@ -391,11 +387,7 @@ public class Calc implements ActionListener {
 			}
 		}
 		
-		else if(e.getSource() == Subtractbutton) {
-			select=2;
-			check = true;
-			oldnum=Displaylabel.getText();
-			}
+		
 		
 		else if(e.getSource() == Acbutton) { 
 			Displaylabel.setText("");}
@@ -429,15 +421,17 @@ public class Calc implements ActionListener {
 				newnum=Displaylabel.getText();
 				oldnum2=Float.parseFloat(oldnum);
 				newnum2=Float.parseFloat(newnum);
-				result=oldnum2+newnum2;
+				result=temp2+newnum2;
 				Displaylabel.setText(result +"");
+				temp2=0;
 				break;
 			case 2:
 				newnum=Displaylabel.getText();
 				oldnum2=Float.parseFloat(oldnum);
 				newnum2=Float.parseFloat(newnum);
-				result=oldnum2-newnum2;
+				result=(temp2-newnum2);
 				Displaylabel.setText(result +"");
+				temp2=0;
 				break;
 			case 3:
 				newnum=Displaylabel.getText();
@@ -445,6 +439,7 @@ public class Calc implements ActionListener {
 				newnum2=Float.parseFloat(newnum);
 				result=oldnum2*newnum2;
 				Displaylabel.setText(result +"");
+				temp2=0;
 				break;
 			case 4:
 				newnum=Displaylabel.getText();
@@ -452,13 +447,12 @@ public class Calc implements ActionListener {
 				newnum2=Float.parseFloat(newnum);
 				result=oldnum2/newnum2;
 				Displaylabel.setText(result +"");
+				temp2=0;
 				break;
 				
 				
 			default:
-				Displaylabel.setText("You monkey");
-			
-			
+				Displaylabel.setText("Access Prohibited");		
 			}
 			}
 		
@@ -466,9 +460,31 @@ public class Calc implements ActionListener {
 			select=1;
 			check = true;
 			oldnum=Displaylabel.getText();
+			temp=Float.parseFloat(oldnum);
+			temp2=temp+temp2;}
 			
-			
+		else if(e.getSource() == Subtractbutton) {
+			select=2;
+			check = true;
+			oldnum=Displaylabel.getText();
+			temp=Float.parseFloat(oldnum);
+			temp2=temp+temp2;
+				}			
+
+		else if(e.getSource() == Multibutton){
+
+			select=3;
+			check = true;
+			oldnum=Displaylabel.getText();
+			temp=Float.parseFloat(oldnum);
+
 			}
+		else if(e.getSource() == Divisionbutton) {
+			select=4;
+			check = true;
+			oldnum=Displaylabel.getText();
+			}
+		
 			
 		
 	}
